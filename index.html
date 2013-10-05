@@ -1,0 +1,75 @@
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- load polymer custom elements -->
+  <script src="polymer/custom-elements.min.js" type="text/javascript"></script>
+
+  <!-- load our dummy event emitter -->
+  <script src="events/emitter.js" type="text/javascript"></script>
+
+
+  <!-- load all our custom elements -->
+  <script src="customElements/html/para.js" type="text/javascript"></script>
+  <script src="customElements/html/charRun.js" type="text/javascript"></script>
+  <script src="customElements/html/listItem.js" type="text/javascript"></script>
+  <script src="customElements/html/heading.js" type="text/javascript"></script>
+
+  <script src="customElements/word/para.js" type="text/javascript"></script>
+  <script src="customElements/word/charRun.js" type="text/javascript"></script>
+  <script src="customElements/word/listItem.js" type="text/javascript"></script>
+  <script src="customElements/word/heading.js" type="text/javascript"></script>
+
+  <!-- load all our own input mechanism -->
+  <script src="input/input.js" type="text/javascript"></script>
+
+  <!-- load all our selection -->
+  <script src="selection/selection.js" type="text/javascript"></script>
+
+  <!-- load the core editing solution -->
+  <script src="coreEdit/coreEdit.js" type="text/javascript"></script>
+
+  <!-- load all our main script -->
+  <script src="main.js" type="text/javascript"></script>
+
+</head>
+<body onload="init()">
+
+  <div class="exampleBox">
+    <html-heading level=1>
+      <html-charrun>This is an HTML test.</html-charrun>
+    </html-heading>
+    <html-para>
+      <html-charrun>Edit these paragraphs to see difference in behaviour.</html-charrun>
+    </html-para>
+
+      <html-listitem><html-charrun>item number 1.</html-charrun></html-listitem>
+      <html-listitem><html-charrun>item number 2.</html-charrun></html-listitem>
+      <html-listitem><html-charrun>item number 3.</html-charrun></html-listitem>
+
+    <html-para>
+      <html-charrun>And another paragraph.</html-charrun>
+    </html-para>
+  </div>
+
+  <div class="exampleBox">
+    <word-heading level=1>
+      <word-charrun>This is a Word document test.</word-charrun>
+    </word-heading>
+    <word-para>
+      <word-charrun>Edit these paragraphs to see difference in behaviour.</word-charrun>
+    </word-para>
+
+      <word-listitem><word-charrun>item number 1.</word-charrun></word-listitem>
+      <word-listitem><word-charrun>item number 2.</word-charrun></word-listitem>
+      <word-listitem><word-charrun>item number 3.</word-charrun></word-listitem>
+
+    <word-para>
+      <word-charrun>And another paragraph.</word-charrun>
+    </word-para>
+  </div>
+
+
+</body>
+</html>

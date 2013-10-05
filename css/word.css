@@ -1,0 +1,21 @@
+
+word-para,
+word-heading {
+  display: block;
+  margin-top: 10px;
+}
+
+word-charrun {
+  display: inline;
+  white-space: pre-wrap;
+}
+
+word-listitem {
+  list-style-type: decimal;
+  display: list-item;
+  margin-left: 40;
+}
+
+word-heading {
+  font-size: 18pt;
+}
